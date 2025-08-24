@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background decorative elements -->
+    <div class="bg-elements">
+        <div class="element element-1"></div>
+        <div class="element element-2"></div>
+        <div class="element element-3"></div>
+        <div class="element element-4"></div>
+        <div class="qr-icon qr-1">■</div>
+        <div class="qr-icon qr-2">■</div>
+        <div class="qr-icon qr-3">■</div>
+    </div>
+    
+    <div class="container">
+        <p class="header">Enter your text or URL</p>
+        <input class="search-box" type="search" placeholder="Text or URL" id="qrText">
+        <div id="imgBox">
+            <img src="" id="qrImage">
+        </div>
+        <div class="btn-div">
+            <button onclick="generateQR()" class="btn">Generate QR Code</button>
+            <button onclick="downloadQR()" class="download-btn" id="downloadBtn">Download QR Code</button>
+        </div>
+    </div>
+    
+    <div class="footer">
+        QR Code Generator mitra9917&copy; 2025
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
